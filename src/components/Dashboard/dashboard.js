@@ -1,5 +1,5 @@
 import React from "react";
-
+import Allotments from "./Allotments";
 import { withStyles } from "@material-ui/styles";
 
 const styles = (theme) => ({
@@ -18,6 +18,7 @@ class Dashboard extends React.Component {
 		return (
 			<div>
 				<div className={classes.title}>DASHBOARD</div>
+				<Allotments />
 			</div>
 		);
 	}

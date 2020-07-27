@@ -33,6 +33,24 @@ class Allotments extends React.Component {
 				description: "Other",
 			},
 		];
+		const fleetsData = [
+			{
+				number: "71",
+				description: "Assigned",
+			},
+			{
+				number: "8",
+				description: "Unassigned",
+			},
+			{
+				number: "12",
+				description: "Off Road",
+			},
+			{
+				number: "3",
+				description: "Removed",
+			},
+		];
 		return (
 			<Grid container spacing={3}>
 				<Grid item xs={12} sm={12} md={6} lg={6}>
@@ -47,6 +65,14 @@ class Allotments extends React.Component {
 					<Tile
 						title="PENDING REQUESTS FOR APPROVAL"
 						body={<NumberSection data={requestData} />}
+						height="200px"
+					/>
+				</Grid>
+
+				<Grid item xs={12} sm={12} md={6} lg={6}>
+					<Tile
+						title="Fleets"
+						body={<NumberSection data={fleetsData} />}
 						height="200px"
 					/>
 				</Grid>
