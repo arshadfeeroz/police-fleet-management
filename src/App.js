@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header/header";
+import Header from "./components/Header/Header";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
