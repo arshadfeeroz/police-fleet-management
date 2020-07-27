@@ -1,5 +1,5 @@
 import React from "react";
-import NavItem from "./navItem";
+import NavItem from "./NavItem";
 
 import Speed from "@material-ui/icons/Speed";
 import Assessment from "@material-ui/icons/Assessment";

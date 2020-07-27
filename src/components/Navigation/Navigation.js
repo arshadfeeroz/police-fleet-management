@@ -1,7 +1,7 @@
 import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
-import PrimaryNav from "./primaryNav";
+import PrimaryNav from "./PrimaryNav";
 import { withStyles } from "@material-ui/styles";
 
 const styles = (theme) => ({

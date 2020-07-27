@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Header from "../components/Header/header";
-import Navigation from "../components/Navigation/navigation";
+import Header from "../components/Header/Header";
+import Navigation from "../components/Navigation/Navigation";
 import { Container, CssBaseline } from "@material-ui/core";
 import Dashboard from "../components/Dashboard/dashboard";
 
