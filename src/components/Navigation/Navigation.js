@@ -1,6 +1,7 @@
 import React from "react";
 import Drawer from "@material-ui/core/Drawer";
-import PrimaryNav from "./PrimaryNav";
+import List from "@material-ui/core/List";
+import PrimaryNav from "./primaryNav";
 import { withStyles } from "@material-ui/styles";
 
 const styles = (theme) => ({
@@ -8,6 +9,11 @@ const styles = (theme) => ({
 		position: "relative",
 		whiteSpace: "nowrap",
 		zIndex: 0,
+		width: "240px",
+	},
+	navList: {
+		marginTop: "4em",
+		width: "240px",
 	},
 });
 
@@ -22,8 +28,11 @@ class Navigation extends React.Component {
 					anchor="left"
 					open={true}
 					className={classes.drawerPaper}
-				></Drawer>
-				<PrimaryNav />
+				>
+					<List className={classes.navList}>
+						<PrimaryNav />
+					</List>
+				</Drawer>
 			</div>
 		);
 	}

@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/styles";
 
 const styles = (theme) => ({
-	navList: {
-		marginTop: "4em",
-		width: "240px",
+	link: {
+		textDecoration: "none",
+		color: "initial",
 	},
 });
 
@@ -20,7 +20,9 @@ class NavItem extends React.Component {
 		return (
 			<Link className={classes.link} to={this.props.route}>
 				<ListItem button>
-					<ListItemIcon>{this.props.Icon}</ListItemIcon>
+					<ListItemIcon>
+						<this.props.Icon />
+					</ListItemIcon>
 					<ListItemText primary={this.props.name} />
 				</ListItem>
 			</Link>

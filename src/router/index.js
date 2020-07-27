@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Header from "../components/Header/Header";
-import Navigation from "../components/Navigation/Navigation";
+import Header from "../components/Header/header";
+import Navigation from "../components/Navigation/navigation";
 import { Container, CssBaseline } from "@material-ui/core";
 import Dashboard from "../components/Dashboard/dashboard";
 
@@ -18,6 +18,8 @@ const styles = (theme) => ({
 		backgroundColor: "rgba(0, 0, 0, 0.04)",
 	},
 	container: {
+		paddingTop: "6em",
+		paddingLeft: "2em",
 		height: "100%",
 	},
 });
@@ -32,11 +34,9 @@ class Router extends React.Component {
 				<BrowserRouter>
 					<Navigation />
 					<main className={classes.content}>
-						<div className={classes.appBarSpacer} />
 						<Container maxWidth="xl-lg" className={classes.container}>
 							<Switch>
-								<Route exact path="/" component={Dashboard} />
-								/>
+								<Route path="/" component={Dashboard} />
 							</Switch>
 						</Container>
 					</main>
