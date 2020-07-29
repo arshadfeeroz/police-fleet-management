@@ -7,16 +7,23 @@ class DriverDetails extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "",
+            firstName: "",
+            lastName: "",
             age: "",
             onSubmitflag: false
         }
         this.showTable = this.showTable.bind(this);
     }
 
-    setName(e) {
+    firstName(e) {
         this.setState({
-            name: e.target.value
+            firstName: e.target.value
+        })
+    }
+
+    lastName(e) {
+        this.setState({
+            lastName: e.target.value
         })
     }
 
@@ -41,13 +48,14 @@ class DriverDetails extends React.Component {
                     <h2>Enter Driver Details</h2>
 
                     <form noValidate autoComplete="off">
-                        <TextField id="standard-basic" label="Enter Driver Name" onChange={e => this.setName(e)} /><br></br>
+                        <TextField id="standard-basic" label="Enter First Name" onChange={e => this.firstName(e)} /><br></br>
+                        <TextField id="standard-basic" label="Enter Last Name" onChange={e => this.lastName(e)} /><br></br>
                         <TextField id="standard-basic" label="Enter Driver Age" onChange={e => this.setAge(e)} />
                     </form> <br></br>
                     <button onClick={ this.showTable }>Submit</button> <br></br>
 
                     { this.state.onSubmitflag && 
-                        <TableView  name= {this.state.name} age={this.state.age} />
+                        <TableView  firstName= {this.state.firstName}  lastName= {this.state.lastName} age={this.state.age} />
                     }
 
 
