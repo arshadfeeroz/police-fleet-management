@@ -7,6 +7,7 @@ import Dashboard from "../components/Dashboard/dashboard";
 import DriversDetail from "../components/Drivers/DriversDetail/DriversDetail";
 
 import { withStyles } from "@material-ui/styles";
+import DriversListContainer from "../container/DriversListContainer";
 
 const styles = (theme) => ({
 	root: {
@@ -38,7 +39,7 @@ class Router extends React.Component {
 						<Container maxWidth="xl-lg" className={classes.container}>
 							<Switch>
 							<Route exact path="/" component={Dashboard} />
-							<Route path="/drivers" exact component={DriversDetail} />
+							<Route path="/drivers" exact component={DriversListContainer} />
 							</Switch>
 						</Container>
 					</main>

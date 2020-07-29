@@ -1,0 +1,37 @@
+{
+  "status": {
+    "type": "SUCCESS",
+    "code": "200"
+  },
+  "data": [{
+    "id": "BLR7563",
+    "name": "R Karen Green",
+    "dob": "12-ARL-1989",
+    "vehicalAssigned": "Mini Cooper",
+    "jobLocation": "Mumbai"
+  },{
+    "id": "BLR7564",
+    "name": "Monica Dakota",
+    "dob": "12-ARL-1989",
+    "vehicalAssigned": "Mini Cooper",
+    "jobLocation": "Delhi"
+  },{
+    "id": "BLR7565",
+    "name": "George Bing",
+    "dob": "12-ARL-1989",
+    "vehicalAssigned": "Mini Cooper",
+    "jobLocation": "Delhi"
+  },{
+    "id": "BLR7566",
+    "name": "Ross Gellar",
+    "dob": "12-ARL-1989",
+    "vehicalAssigned": "Mini Cooper",
+    "jobLocation": "London"
+  },{
+    "id": "BLR7567",
+    "name": "Joey Tribbiani",
+    "dob": "12-ARL-1989",
+    "vehicalAssigned": "Porsche",
+    "jobLocation": "New York"
+  }] 
+}
