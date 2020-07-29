@@ -20,7 +20,7 @@ class PrimaryNav extends React.Component {
 				<NavItem route="/" name="Dashboard" Icon={Speed} />
 				<NavItem route="" name="Service Requests" Icon={Feedback} />
 				<NavItem route="" name="Expenses" Icon={AttachMoney} />
-				<NavItem route="" name="Drivers" Icon={PermContactCalendarIcon} />
+				<NavItem route="/drivers" name="Drivers" Icon={PermContactCalendarIcon} />
 				<NavItem route="" name="Reports" Icon={Assessment} />
 			</div>
 		);
