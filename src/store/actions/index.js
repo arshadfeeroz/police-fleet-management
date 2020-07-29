@@ -10,3 +10,7 @@ export const getDriversList = () => async (dispatch) => {
     dispatch({ type: actions.GET_DRIVER_LIST_FAIL });
   } 
 }
+
+export const addNewDriver = (driver) => dispatch => {
+  dispatch({ type: actions.ADD_DRIVER_IN_LIST, driver });
+}

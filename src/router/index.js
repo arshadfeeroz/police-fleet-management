@@ -4,7 +4,6 @@ import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
 import { Container, CssBaseline } from "@material-ui/core";
 import Dashboard from "../components/Dashboard/dashboard";
-import DriversDetail from "../components/Drivers/DriversDetail/DriversDetail";
 
 import { withStyles } from "@material-ui/styles";
 import DriversListContainer from "../container/DriversListContainer";
