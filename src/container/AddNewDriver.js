@@ -4,12 +4,15 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import AddNewDriverForm from '../components/Drivers/AddNewDriverForm';
 import DriverDetailsSummary from '../components/Drivers/DriverDetailsSummary';
+import { useDispatch } from 'react-redux';
+import { addNewDriver } from '../store/actions';
 
 const TITLE = { 1: 'Add New Driver', 2: 'Driver Summary' };
 
 const AddNewDriver = ({ handleClose }) => {
   const [step, setStep] = useState(1);
   const [driverDetails, setDriverDetails] = useState({});
+  const dispatch = useDispatch();
 
   const gotoSummary = (data) => { 
     setDriverDetails(data);
@@ -18,7 +21,10 @@ const AddNewDriver = ({ handleClose }) => {
 
   const gotoForm = () => setStep(1);
 
-  const onSubmit = () => { console.log(driverDetails); }
+  const onSubmit = () => { 
+    dispatch(addNewDriver(driverDetails)); 
+    handleClose();
+  }
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open>
