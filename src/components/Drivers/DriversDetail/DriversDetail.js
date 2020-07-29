@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import TableView from './tableView';
-
+import Button from '@material-ui/core/Button';
 class DriverDetails extends React.Component {
 
     constructor(props) {
@@ -44,7 +44,9 @@ class DriverDetails extends React.Component {
                         <TextField id="standard-basic" label="Enter Driver Name" onChange={e => this.setName(e)} /><br></br>
                         <TextField id="standard-basic" label="Enter Driver Age" onChange={e => this.setAge(e)} />
                     </form> <br></br>
-                    <button onClick={ this.showTable }>Submit</button> <br></br>
+                    <Button variant="contained" color="primary" onClick={ this.showTable }>
+                        Submit
+                    </Button>
 
                     { this.state.onSubmitflag && 
                         <TableView  name= {this.state.name} age={this.state.age} />
