@@ -34,7 +34,7 @@ class TableView extends React.Component {
                             {rows.map((row) => (
                                 <TableRow key={row.name}>
                                     <TableCell component="th" scope="row"> {row.firstName} </TableCell>
-                                    <TableCell component="th" scope="row"> {row.lastName} </TableCell>
+                                    <TableCell component="th" > {row.lastName} </TableCell>
                                     <TableCell align="right">{row.age}</TableCell>
                                 </TableRow>
                             ))}
