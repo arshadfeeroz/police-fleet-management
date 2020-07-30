@@ -67,7 +67,7 @@ const AddNewDriverForm = ({ data, save }) => {
             onChange={e => { setData({ vehicalAssigned: e.target.value }); }}
           />
         </Grid>
-        <Grid item xs={12} sm={12}>
+        {/* <Grid item xs={12} sm={12}>
           <TextField
             variant="outlined"
             margin="normal"
@@ -79,7 +79,7 @@ const AddNewDriverForm = ({ data, save }) => {
             value={driverDetails.jobLocation}
             onChange={e => { setData({ jobLocation: e.target.value }); }}
           />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={12} spacing={4}>
           <Button type="submit" variant="contained" color="primary">Next</Button>
         </Grid>

@@ -24,7 +24,7 @@ const DriversList = ({ list }) => {
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.dob}</TableCell>
               <TableCell>{row.vehicalAssigned}</TableCell>
-              <TableCell>{row.jobLocation}</TableCell>
+              {/* <TableCell>{row.jobLocation}</TableCell> */}
             </TableRow>
           ))}
         </TableBody>
