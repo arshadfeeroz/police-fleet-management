@@ -1,11 +1,16 @@
 import React from 'react';
-import './App.css';
+import { StylesProvider, ThemeProvider } from '@material-ui/styles';
+import 'typeface-roboto';
+
+import Router from './router';
 
 function App() {
   return (
-    <div className="App">
-      Hello World!!
-    </div>
+    <StylesProvider injectFirst>
+      {/* <ThemeProvider theme={theme}> */}
+        <Router />
+      {/* </ThemeProvider> */}
+    </StylesProvider>
   );
 }
 

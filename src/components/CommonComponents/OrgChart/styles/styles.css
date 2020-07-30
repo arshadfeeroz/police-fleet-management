@@ -1,0 +1,206 @@
+.full-container {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  /* ########################   DEPARTMENT INFO  ############################*/
+  
+  .department-information {
+    font-family: 'Roboto', sans-serif;
+  display:none;
+    box-shadow: 0 0 5px #999999;
+    position: absolute;
+    max-width: 200px;
+    top: 60px;
+    left: 20px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .department-information .dept-name {
+    color: #26a69a;
+    font-weight: bold;
+  }
+  
+  .department-information .dept-description {
+    margin-top: 10px;
+    color: #959b9a;
+    font-size: 13px;
+  }
+  
+  .department-information .dept-emp-count {
+    margin-top: 10px;
+    color: #959b9a;
+    font-size: 13px;
+  }
+  
+  x
+  /* ####################################### TAGS ###################################### */
+  
+  .tags {
+    list-style: none;
+    margin-top: -9px;
+    margin-left: 5px;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .tags-wrapper {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+  }
+  
+  .tags-wrapper .title {
+    color: #91a4a5;
+    font-size: 24px;
+  }
+  
+  .tags li {
+    float: left;
+  }
+  
+  .tag {
+    font-size: 11px;
+    background: #E1ECF4;
+    border-radius: 2px;
+    color: ##39739d;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px 0 5px;
+    position: relative;
+    margin: 0 5px 5px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+  }
+  
+  
+  /* #############################   Buttons  ############################################*/
+  
+  .btn-search {
+    top: 80px;
+  }
+  
+  .btn-fullscreen {
+    top: 20px;
+  }
+  
+  .btn-back {
+    top: 20px;
+    left: 20px;
+    display: none;
+  }
+  
+  .btn-show-my-self {
+    top: 50px;
+  }
+  
+  .btn-action {
+    position: absolute;
+    right: 25px;
+    height: 26px;
+    color: white;
+    background-color: #aa1414;
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .btn-action:focus {
+    outline: 0;
+    background-color: #aa1414;
+  }
+  
+  .btn-action:hover {
+    background-color: #490b0b;
+  }
+  
+  .btn-action i {
+    font-size: 14px;
+  }
+  
+  .btn-action .icon {
+    background-color: #c19e45;
+    padding: 5px 6px 5px 6px;
+    border-radius: 11px;
+    margin-right: -7px;
+  }
+  
+  
+  /* ############################################## SVG ################################# */
+  
+  .nodeHasChildren {
+    fill: white;
+  }
+  
+  .nodeDoesNotHaveChildren {
+    fill: white;
+  }
+  
+  .nodeRepresentsCurrentUser {
+    stroke: Chartreuse;
+    stroke-width: 3;
+  }
+  
+  text {
+    fill: dimgray;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+  
+  .node {
+    cursor: pointer;
+  }
+  
+  .node-collapse {
+    stroke: grey;
+  }
+  
+  .node-collapse-right-rect {
+    fill: #70c645;
+    stroke: #70c645;
+  }
+  
+  .node text {
+    fill: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10px;
+  }
+  
+  .node circle {
+    stroke-width: 1px;
+    stroke: #70c645;
+    fill: #70c645;
+  }
+  
+  .node-group .emp-name {
+    fill: #962828;
+    font-size: 12px;
+    font-weight: 600
+  }
+  
+  .node-group .emp-position-name {
+    fill: #59525b;
+    font-size: 11px;
+  }
+  
+  .node-group .emp-area {
+    fill: #91a4a5;
+    font-size: 10px;
+  }
+  
+  .node-group .emp-count,
+  .node-group .emp-count-icon {
+    fill: #91a4a5;
+    font-size: 12px;
+  }
