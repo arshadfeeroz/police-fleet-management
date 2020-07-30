@@ -78,16 +78,15 @@ export const AllocatedVehicleAction = (token) => {
             url: 'https://run.mocky.io/v3/e849c6c7-8181-420e-9d58-88eb21e370ba',
             //headers:{'Authorization':'JWT '+token}
         })
-        .then((response) => {
-            if (response.status === 200) {
-                console.log(response);
-                dispatch(AllocatedVehicleActionPass([]));
-            } else {
-                dispatch(AllocatedVehicleActionFail());
-            }
+            .then((response) => {
+                if (response.status === 200) {
+                    dispatch(AllocatedVehicleActionPass(response.data));
+                } else {
+                    dispatch(AllocatedVehicleActionFail());
+                }
 
-        }).catch((response) => {
-            dispatch(AllocatedVehicleActionFail());
-        })
+            }).catch((response) => {
+                dispatch(AllocatedVehicleActionFail());
+            })
     }
 }
