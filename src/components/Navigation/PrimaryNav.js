@@ -18,10 +18,10 @@ class PrimaryNav extends React.Component {
 		return (
 			<div>
 				<NavItem route="/" name="Dashboard" Icon={Speed} />
-				<NavItem route="" name="Service Requests" Icon={Feedback} />
-				<NavItem route="" name="Expenses" Icon={AttachMoney} />
-				<NavItem route="" name="Drivers" Icon={PermContactCalendarIcon} />
-				<NavItem route="" name="Reports" Icon={Assessment} />
+				<NavItem route="/servicerequests" name="Service Requests" Icon={Feedback} />
+				<NavItem route="/expenses" name="Expenses" Icon={AttachMoney} />
+				<NavItem route="/drivers" name="Drivers" Icon={PermContactCalendarIcon} />
+				<NavItem route="/reports" name="Reports" Icon={Assessment} />
 			</div>
 		);
 	}

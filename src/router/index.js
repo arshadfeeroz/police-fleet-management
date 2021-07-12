@@ -4,6 +4,10 @@ import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
 import { Container, CssBaseline } from "@material-ui/core";
 import Dashboard from "../components/Dashboard/dashboard";
+import ServiceRequests from "../components/ServiceRequests/ServiceRequests";
+import Expenses from "../components/Expenses/Expenses";
+import Drivers from "../components/Drivers/Drivers";
+import Reports from "../components/Reports/Reports";
 
 import { withStyles } from "@material-ui/styles";
 
@@ -36,7 +40,11 @@ class Router extends React.Component {
 					<main className={classes.content}>
 						<Container maxWidth="xl-lg" className={classes.container}>
 							<Switch>
-								<Route path="/" component={Dashboard} />
+								<Route exact path="/" component={Dashboard} />
+								<Route exact path="/servicerequests" component={ServiceRequests} />
+								<Route exact path="/expenses" component={Expenses} />
+								<Route exact path="/drivers" component={Drivers} />
+								<Route exact path="/reports" component={Reports} />
 							</Switch>
 						</Container>
 					</main>
