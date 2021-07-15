@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Tile from "./Tile";
 import NumberSection from "./NumberSection";
 import { withStyles } from "@material-ui/styles";
+import Counter from './Counter'
 
 const styles = (theme) => ({});
 
@@ -76,6 +77,16 @@ class Allotments extends React.Component {
 						height="200px"
 					/>
 				</Grid>
+				
+				<Grid item xs={12} sm={12} md={6} lg={6}>
+					<Tile
+						title="Counter"
+						body={<Counter />}
+						height="200px"
+					/>
+				</Grid>
+
+			
 			</Grid>
 		);
 	}

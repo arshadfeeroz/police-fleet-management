@@ -14,3 +14,4 @@ export const getDriversList = () => async (dispatch) => {
 export const addNewDriver = (driver) => dispatch => {
   dispatch({ type: actions.ADD_DRIVER_IN_LIST, driver });
 }
+
