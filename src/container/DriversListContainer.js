@@ -6,6 +6,7 @@ import AddNewDriver from './AddNewDriver';
 import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDriversList } from '../store/actions';
+import driversData from './drivers.json'
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -18,17 +19,12 @@ const useStyles = makeStyles((theme) => ({
 function DriversListContainer(props) {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
-
-  const dispatch = useDispatch();
-
-  const driversList = useSelector(state => state.drivers.list)
+  const [driversList, setDrivers] = useState(driversData.data)
 
   const onClickAddnew = () => setIsOpen(true);
   const closePopup = () => setIsOpen(false);
+  const addDriver = (driver) => {console.log(driver)}
 
-  useEffect(() => {
-    dispatch(getDriversList());
-  }, []);
 
   return (
     <div>
@@ -37,7 +33,7 @@ function DriversListContainer(props) {
         <Button variant="contained" color="primary" onClick={onClickAddnew}>+Add new</Button>
       </div>
       <DriversList list={driversList}/>
-      {isOpen && <AddNewDriver handleClose={closePopup} />}
+      {isOpen && <AddNewDriver handleClose={closePopup}/>}
     </div>
   );
 }

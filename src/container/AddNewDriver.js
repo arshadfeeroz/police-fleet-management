@@ -18,7 +18,7 @@ const AddNewDriver = ({ handleClose }) => {
 
   const gotoForm = () => setStep(1);
 
-  const onSubmit = () => { console.log(driverDetails); }
+  const onSubmit = () => { console.log(driverDetails)}
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open>
