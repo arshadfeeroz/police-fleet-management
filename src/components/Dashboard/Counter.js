@@ -28,27 +28,27 @@ const styles = (theme) => ({
 class Counter extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      counter: 0
-    }
+    // this.state = {
+    //   counter: 0
+    // }
   }
 
-  increment = (e) => {
-    this.setState({
-      counter: this.state.counter + 1
-    })
-  }
+  // increment = (e) => {
+  //   this.setState({
+  //     counter: this.state.counter + 1
+  //   })
+  // }
 	render() {
 		const { classes } = this.props;
-    const { counter } = this.state;
+    //const { counter } = this.state;
 		return (
 			<div className={classes.numberSection}>
 				<div className={classes.number}>
           <div className={classes.numberDescription}>The Local Count is</div>
           <div className={classes.numberTitle}>
-            {counter}
+            {0}
           </div>
-          <button onClick={this.increment}>Increment Local Count</button>
+          <button onClick={this.props.incrementRequestDataCount}>Increment Local Count</button>
         </div>
 			</div>
 		);

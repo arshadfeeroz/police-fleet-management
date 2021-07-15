@@ -54,6 +54,15 @@ class Allotments extends React.Component {
 			]
 		}
 	}
+
+	incrementRequestDataCount = () => {
+		// this.setState({
+		// 	requestData: this.state.requestData.map((vehicle) => {
+		// 		return ({...vehicle, number: vehicle.number + 1})
+		// 	})
+		// })
+	}
+
 	render() {
 		const { classes } = this.props;
 		const {allotmentData, requestData, fleetsData} = this.state;
@@ -86,7 +95,7 @@ class Allotments extends React.Component {
 				<Grid item xs={12} sm={12} md={6} lg={6}>
 					<Tile
 						title="Counter"
-						body={<Counter />}
+						body={<Counter incrementRequestDataCount={this.incrementRequestDataCount}/>}
 						height="200px"
 					/>
 				</Grid>
